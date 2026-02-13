@@ -13,5 +13,8 @@ aprsPasscode=<yourAprsPasscode>
 
 [Wunderground API documentation](https://twcapi.co/v2PWSO)
 
+[APRS weather data API](http://www.aprs.net/vm/DOS/WX.HTM)
+
 [How to get an APRS passcode](https://www.darc.de/der-club/distrikte/o/ortsverbaende/aprspasscode/)
 
+[Converting APRS coordinates](https://kd8tnv.com/coord.php)
