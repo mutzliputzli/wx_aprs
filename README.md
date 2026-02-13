@@ -1,9 +1,7 @@
 # wx_aprs
 
-## Python to forward local weather data from Wunderground to the APRS Network.
+### Python to forward local weather data from Wunderground to the APRS Network.
 
-
-	[title](https://www.example.com)
     
 [Wunderground API documentation](https://twcapi.co/v2PWSO)
 
@@ -11,8 +9,10 @@
 
 There must be a property file aprs_beacon.properties in the same directory as the py file. It contains credentials for Wunderground and APRS access.
 
-`wundergroundStationId=<yourWundergroundStationId>
+```
+wundergroundStationId=<yourWundergroundStationId>
 wundergroundApiKey=<yourWundergroundApiKey>
 aprsCallsign=<yourCallsign>
-aprsPasscode=<yourAprsPasscode>`
+aprsPasscode=<yourAprsPasscode>
+```
 
