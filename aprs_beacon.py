@@ -68,8 +68,11 @@ print("lat", lat)
 # converting pressure from inHg to mbar
 def inhg_to_mbar(inhg_value:float) -> float:
     return inhg_value * 33.8638866667
+pressure = (inhg_to_mbar(pressure) + 20) * 10
 
-pressure = inhg_to_mbar(pressure) * 10
+#converting rain values from inch to mm
+rainfall_since_midnight = rainfall_since_midnight * 25.4
+percipRate = percipRate * 25.4
 
 # formatting weather data
 temperaturestr = str("%03d" % temperature)
