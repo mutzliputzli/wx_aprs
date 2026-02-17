@@ -70,19 +70,19 @@ def inhg_to_mbar(inhg_value:float) -> float:
     return inhg_value * 33.8638866667
 pressure = (inhg_to_mbar(pressure) + 20) * 10
 
-#converting rain values from inch to mm
-rainfall_since_midnight = rainfall_since_midnight * 25.4
-percipRate = percipRate * 25.4
+#converting rain values 1/100 inch
+rainfall_since_midnight = rainfall_since_midnight * 100
+percipRate = percipRate * 100
 
 # formatting weather data
 temperaturestr = str("%03d" % temperature)
-humiditystr = str ("%02d" %humidity)
-pressurestr = str ("%05d" %pressure)
+humiditystr = str ("%02d" % humidity)
+pressurestr = str ("%05d" % pressure)
 wind_directionstr = str ("%03d" % wind_direction)
 wind_speedstr = str ("%03d" % wind_speed)
 wind_guststr = str ("%03d" % wind_gust)
-rainfall_since_midnightstr = str ("%03d" %rainfall_since_midnight)
-percipratestr = str ("%03d" %percipRate)
+rainfall_since_midnightstr = str ("%03d" % rainfall_since_midnight)
+percipratestr = str ("%03d" % percipRate)
 
 print("temperaturestr", temperaturestr)
 print("humiditystr", humiditystr)
