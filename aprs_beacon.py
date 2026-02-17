@@ -42,7 +42,7 @@ if response.status_code == 200:
 else:
     print(f"Error retrieving data, status code: {response.status_code}")
 
-# get date from request
+# get data from request
 temperature = data['observations'][0]['imperial']['temp']
 humidity = data['observations'][0]['humidity']
 pressure = data['observations'][0]['imperial']['pressure']
@@ -70,7 +70,7 @@ def inhg_to_mbar(inhg_value:float) -> float:
     return inhg_value * 33.8638866667
 pressure = (inhg_to_mbar(pressure) + 20) * 10
 
-#converting rain values 1/100 inch
+# converting rain values to 1/100 inch
 rainfall_since_midnight = rainfall_since_midnight * 100
 percipRate = percipRate * 100
 
